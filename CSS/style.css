@@ -1,0 +1,59 @@
+/*Global*/
+*{
+    box-sizing: border-box;
+}
+/* body{
+    background-color: #EBECF2;
+} */
+.container{
+    width: 1200px;
+    margin : auto;
+    background-color: #EBECF2;
+}
+
+/*Header*/
+ header{
+    height: 60px;
+    background-color: #384B59;
+}
+
+ header #branding {
+    margin: 0 0 10px 24px;
+} 
+header li{
+    display: inline;
+    padding: 0 21px 0 21px;
+}
+/* header a{
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+header a:hover{
+    background-color: #E9E9E91A;
+}
+header  nav{
+    float: right;
+    margin-top: 21px;
+}
+
+/*Dashboard*/
+#dashboard h1{
+    font-family: 'Quicksand';
+    font-size: 18px;
+    height: 23px;
+    width: 300px;
+    margin: 43px 0 0 24px;
+}
+#dashboard img
+ /* .branding img[alt="Menu Icon"]{
+    
+}  */
+/* footer{
+    height: 44px;
+    background-color: #384B59;
+    text-align: right;
+    font-size: 11px;
+
+} */
