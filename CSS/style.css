@@ -1,55 +1,92 @@
 /*Global*/
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 /* body{
     background-color: #EBECF2;
 } */
-.container{
-    width: 1200px;
-    margin : auto;
-    background-color: #EBECF2;
+.container {
+  width: 1200px;
+  margin: auto;
+  background-color: #ebecf2;
 }
 
 /*Header*/
- header{
-    height: 60px;
-    background-color: #384B59;
+header {
+  height: 60px;
+  background-color: #384b59;
+  padding: 0 24px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
- header #branding {
-    margin: 0 0 10px 24px;
-} 
-header li{
-    display: inline;
-    padding: 0 21px 0 21px;
+header #logo-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
+
+header #logo-container img {
+  cursor: pointer;
+}
+header #logo {
+  margin-right: 60px;
+}
+/* header li {
+  display: inline;
+  padding: 0 21px 0 21px;
+} */
 /* header a{
     float: right;
     margin-left: auto;
     margin-right: auto;
 } */
 
-header a:hover{
-    background-color: #E9E9E91A;
+header nav {
+  display: flex;
+  justify-content: end;
+  align-content: center;
 }
-header  nav{
-    float: right;
-    margin-top: 21px;
+nav .nav-size {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav div:hover {
+  background-color: #e9e9e91a;
 }
 
-/*Dashboard*/
-#dashboard h1{
-    font-family: 'Quicksand';
-    font-size: 18px;
-    height: 23px;
-    width: 300px;
-    margin: 43px 0 0 24px;
+#inbox {
+  position: absolute;
 }
-#dashboard img
- /* .branding img[alt="Menu Icon"]{
+.circle {
+  height: 19px;
+  width: 19px;
+  background-color: #fe5621;
+  border-radius: 50%;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding-top: 2px;
+}
+/*Dashboard*/
+#dashboard h1 {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  height: 23px;
+  width: 300px;
+  margin: 43px 0 0 24px;
+}
+#dashboard img /* .branding img[alt="Menu Icon"]{
     
-}  */
+}  */ ;;
 /* footer{
     height: 44px;
     background-color: #384B59;
