@@ -2,6 +2,12 @@
 * {
   box-sizing: border-box;
 }
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 /* body{
     background-color: #EBECF2;
 } */
@@ -11,7 +17,7 @@
   background-color: #ebecf2;
 }
 
-/*Header*/
+/*Header Section*/
 header {
   height: 60px;
   background-color: #384b59;
@@ -76,17 +82,182 @@ nav div:hover {
   left: 20px;
   padding-top: 2px;
 }
-/*Dashboard*/
-#dashboard h1 {
-  font-family: 'Quicksand';
-  font-size: 18px;
+/*Dashboard Section*/
+#dashboard{
+  width: 1152px;
+  height: 169px;
+  margin: 43px 0 24px 24px;
+  font-family: 'Quicksand', sans-serif;
+  /*border: 1px solid grey;*/
+}
+ #dashboard h1 {
   height: 23px;
   width: 300px;
-  margin: 43px 0 0 24px;
+  font-size: 18px;
+  display: inline-block;
+  color: #363F45;
 }
-#dashboard img /* .branding img[alt="Menu Icon"]{
-    
-}  */ ;;
+#dashboard .three-dot{
+  float: right;
+  padding: 5px 12px 0 0;
+  clear: both;
+}
+
+#dashboard .boxes{
+  width: 100%;
+  height: 110px;
+  margin-top: 36px;
+  /* border: 3px solid gold; */
+}
+
+#dashboard .box{
+  float: left;
+  width: 270px;
+  height: 110px;
+}
+
+#dashboard .inner-box-odd{
+  float: right;
+  width: 90px;
+  height: 100%;
+}
+
+#dashboard .inner-box-even{
+  float: right;
+  width: 89px;
+  height: 100%;
+}
+#dashboard .dash-mar{
+  margin-left: 24px;
+}
+ #dashboard .box-1{
+  background-color: #FEC006;
+}
+
+.box-1 .ib-1{
+  /* border: 1px solid grey; */
+  background-color:#000000;
+  opacity: 0.1;
+}  
+
+#dashboard .box-2{
+  background-color: #E81D62;
+  /* margin-left: 24px; */
+}
+
+.box-2 .ib-2{
+  /* border: 1px solid grey; */
+  background-color:#000000;
+  opacity: 0.1;
+}
+
+#dashboard .box-3{
+  background-color:#8AC249;
+  /* margin-left: 24px; */
+}
+
+.box-3 .ib-3{
+  /* border: 1px solid grey; */
+  background-color:#000000;
+  opacity: 0.1;
+}
+
+ #dashboard .box-4{
+   float: right;
+   /* margin-left: 24px; */
+  background-color:#2095F2;
+}
+
+.box-4 .ib-4{
+  /* border: 1px solid grey; */
+  background-color:#000000;
+  opacity: 0.1;
+} 
+
+/*Milestones Section*/
+#milestones{
+  width: 1152px;
+  height: 270px;
+  margin: 55px 0 24px 24px;
+  /*border: 1px solid grey;*/
+}
+
+#milestones h1 {
+  height: 23px;
+  width: 109px;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  display: inline-block;
+  color: #363F45;
+}
+
+#milestones .mile-images{
+  /*border: 1px solid black;*/
+  float: right;
+}
+
+#milestones .less-than{
+  margin-right: 27px;
+}
+
+#milestones .mile-boxes{
+  width: 100%;
+  height: 166px;
+  margin-top: 21px;
+}
+
+#milestones .box{
+  float: left;
+  width: 270px;
+  height: 166px;
+  background-color: #FFFFFF;
+}
+
+#milestones .mile-mar{
+  margin-left: 24px;
+}
+
+#milestones .box-4{
+  float: right;
+}
+
+#milestones .mile-boxes-lower{
+  width: 100%;
+  height: 59px;
+  /*border: 1px solid red;*/
+}
+#milestones .mile-boxes-lower >.box{
+  float: left;
+  width: 270px;
+  height: 59px;
+  margin-top: 0.2mm;
+  background-color: #FFFFFF;
+}
+
+/* Div bar*/
+.bar{
+  width: 1152px;
+  height: 9px;
+  margin: 31px 0 24px 24px;
+  background-color:#F5F5F5;
+  /* border: 1px solid grey; */
+}
+.bar > .inner-bar{
+  width:299px;
+  height: 5px;
+  margin: 2px 0 2px 0;
+  background-color:#D4C69B;
+}
+
+/*Recent Tasks Section*/
+#recent-tasks{
+  width: 564px;
+  height: 339px;
+  margin: 69px 0 24px 24px;
+  background-color:#FFFFFF;
+  border: 1px solid black;
+
+}
 /* footer{
     height: 44px;
     background-color: #384B59;
