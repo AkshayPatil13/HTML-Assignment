@@ -9,18 +9,21 @@
   display: table;
 } */
 /* body{
-    background-color: #EBECF2;
-} */
+    padding-top: 60px;
+}  */
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-top: 60px;
   background-color: #ebecf2;
 }
 
 /*Header Section*/
 header {
-  width: 100%;
-  height: 60px;
+  width: 1200px;
+  height: 60px; 
+  position: fixed;
+  top: 0;
   padding: 0 24px 0 24px;
   display: flex;
   justify-content: space-between;
@@ -68,7 +71,7 @@ nav div:hover {
 }
 
 #inbox {
-  position: absolute;
+   position: absolute; 
 }
 .circle {
   height: 19px;
@@ -123,47 +126,91 @@ nav div:hover {
   float: right;
   width: 90px;
   height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  /* opacity: 0.1;  */
+ 
+  position: relative;
 }
 
 #dashboard .inner-box-even {
   float: right;
   width: 89px;
   height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  /* opacity: 0.1; */
+  position: relative;
 }
 #dashboard .dash-mar {
   margin-left: 24px;
+}
+
+ .boxes img{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} 
+
+.box .left-b{
+  float: left;
+  /* border:1px solid grey; */
+  height: 100%; 
+  margin-left: 15px;
+  padding-top: 11px;
 }
 #dashboard .box-1 {
   background-color: #fec006;
 }
 
-.box-1 .ib-1 {
-  /* border: 1px solid grey; */
-  background-color: #000000;
-  opacity: 0.1;
-}
+/* .box-1 .ib-1 {
+   border: 1px solid grey; 
+  background-color: rgba(0,0,0,0.1);
+  opacity: 0.1; 
+} */
+
+
+  .boxes .text-1{
+  color: #FFFFFF;
+  text-align: left; 
+  
+  /* display: inline-block;  */
+  /* margin: 11px 0 0 15px; */
+  
+}  
+
+.boxes .text-2{
+  color: #FFFFFF;
+  font-size: 30px;
+   /* display: inline-block;  */
+   /* border: 1px solid rebeccapurple; */
+   margin-top: 34px ;  
+  
+} 
+
 
 #dashboard .box-2 {
   background-color: #e81d62;
   /* margin-left: 24px; */
 }
 
-.box-2 .ib-2 {
-  /* border: 1px solid grey; */
-  background-color: #000000;
-  opacity: 0.1;
-}
+/* .box-2 .ib-2 {
+   border: 1px solid grey; 
+  background-color: rgba(0,0,0,0.1);
+   opacity: 0.1; 
+} */
 
 #dashboard .box-3 {
   background-color: #8ac249;
   /* margin-left: 24px; */
 }
 
-.box-3 .ib-3 {
-  /* border: 1px solid grey; */
-  background-color: #000000;
+/* .box-3 .ib-3 {
+   border: 1px solid grey; 
+  background-color: rgba(0,0,0,0.1);
   opacity: 0.1;
-}
+} */
 
 #dashboard .box-4 {
   float: right;
@@ -171,11 +218,11 @@ nav div:hover {
   background-color: #2095f2;
 }
 
-.box-4 .ib-4 {
-  /* border: 1px solid grey; */
-  background-color: #000000;
-  opacity: 0.1;
-}
+/* .box-4 .ib-4 {
+   border: 1px solid grey; 
+  background-color: rgba(0,0,0,0.1);
+   opacity: 0.1; 
+} */
 
 /*Milestones Section*/
 #milestones {
@@ -187,7 +234,7 @@ nav div:hover {
 
 #milestones h1 {
   height: 23px;
-  width: 109px;
+  width: 109px; 
   font-size: 18px;
   font-family: 'Quicksand', sans-serif;
   display: inline-block;
@@ -220,10 +267,73 @@ nav div:hover {
   margin-left: 24px;
 }
 
+/* #milestones .box-1{
+  text-align: center;
+  vertical-align: middle;
+
+} */
 #milestones .box-4 {
   float: right;
 }
+#milestones .outer-circle{
+  width: 111px;
+  height: 111px;
+  border-radius: 50%;
+  margin: 28px 79px 27px 80px ;
+  padding: 10px;
+}  
+#milestones .inner-circle{
+  width:  91px;
+  height: 91px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  text-align: center;
+}
 
+#milestones .box-1 .oc-1{
+  background: #8AC249;
+}
+
+#milestones .box-1 .ic-1{
+  background: #F6EFD2;
+}
+
+#milestones .box-2 .oc-2{
+  background: #FEC006;
+}
+
+#milestones .box-2 .ic-2{
+  background: #F6EFD2;
+}
+
+#milestones .box-3 .oc-3{
+  background: #F1F1F1;
+}
+
+#milestones .box-3 .ic-3{
+  background: #F6EFD2;
+}
+
+#milestones .box-4 .oc-4{
+  background: #F1F1F1;
+}
+
+#milestones .box-4 .ic-4{
+  background: #F6EFD2;
+}
+
+#milestones .mile-boxes-upper .text-1{
+  font-size: 30px;
+  /* border: 1px solid grey;  */
+  margin: 14px 22px 0 23px;
+
+}
+#milestones .mile-boxes-upper .text-2{
+  font-size: 16px;
+  /* border: 1px solid grey;  */
+   margin: 5px 39px 19px 40px; 
+
+}
 #milestones .mile-boxes-lower {
   width: 100%;
   height: 59px;
@@ -237,11 +347,28 @@ nav div:hover {
   background-color: #ffffff;
 }
 
+#milestones .mile-boxes-lower .lower-text{
+  float: left;
+  margin:20px 0 20px 91px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #363F45;
+}
+#milestones .mile-boxes-lower .lower-text-no{
+  float: right;
+  font-size:34px;
+  margin: 9px 22px 7px 0;
+  color: #E1E2E9;
+  font-family: 'Quicksand',sans-serif;
+  font-weight: 700;
+} 
+
 /* Div bar*/
 .bar {
   width: 1152px;
   height: 9px;
   margin: 31px 24px 0 24px;
+  padding: 2px;
   border-radius: 5px;
   background-color: #f5f5f5;
   /* border: 1px solid grey; */
@@ -250,7 +377,6 @@ nav div:hover {
   width: 299px;
   height: 5px;
   border-radius: 3px;
-  margin: 2px 0 2px 0;
   background-color: #d4c69b;
 }
 
@@ -261,17 +387,30 @@ nav div:hover {
   margin: 69px 24px 0 24px;
   /* border: 1px solid rgb(209, 22, 22); */
 }
-.box-layout {
+#last .box-layout {
   float: left;
   width: 564px;
   height: 339px;
   background-color: #ffffff;
   /* border: 1px solid black;*/
 }
+#last .recent-tasks{
+  padding: 18px 30px 22px 29px;
+}
+#last h2{
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #363F45
+}
+#last .recent-three-dot{
+  float: right;
+}
 /*Work Status Section*/
-.work-status {
+#last .work-status {
   float: right;
   margin-left: 24px;
+  padding: 18px 32px 56px 29px;
 }
 
 /*footer*/
