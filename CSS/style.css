@@ -350,20 +350,74 @@ nav div:hover {
   background-color: #ffffff;
 }
 
-#last .recent-tasks {
-  padding: 18px 30px 22px 29px;
+.recent-tasks .left-box-heading{
+  padding: 18px 30px 17px;
+  margin-bottom: 1px;
 }
-
-#last h2 {
-  float: left;
+#last h6 {
+  display: inline-block; 
+  font-size: 16px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   color: #363f45;
+  line-height: 19px;
 }
 
 #last .recent-three-dot {
   float: right;
 }
+
+.recent-tasks ul li{
+  padding: 18px 30px 17px;
+}
+ .recent-tasks .checkbox{
+  height: 17px;
+  width: 17px;
+  border: 1px solid #CED4D9;
+  display: inline-block; 
+  margin-bottom: 5px;
+}
+
+.date{
+  float: right;
+}
+
+.date p:nth-child(1){
+  margin-right: 30px;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Lato' , sans-serif;
+  font-size: 13px;
+  color: #919599;
+}
+
+.recent-tasks ul li:nth-child(2){
+  background-color: #E1F5E3;
+}
+
+.recent-tasks ul li:nth-child(2) span{
+  color: #4BAE4F;
+}
+
+.recent-tasks ul li:nth-child(2) p{
+  display: inline-block;
+}
+
+.recent-tasks ul li:nth-child(2) p img{
+  margin-bottom: 7px;
+}
+
+.recent-tasks ul li span{
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-family: 'Lato' , sans-serif;
+  color: #919599;
+} 
+
+  .recent-tasks ul li{
+  border-top: 1px solid #E6E7ED;
+ } 
 
 /*------------------------------------------------------------------------*/
 
@@ -372,8 +426,60 @@ nav div:hover {
 #last .work-status {
   float: right;
   margin-left: 24px;
-  padding: 18px 32px 56px 29px;
 }
+
+.right-box-heading{
+  padding: 18px 30px 17px;
+  border-bottom: 1px solid #E6E7ED;
+}
+
+.work-status .progress-bar{
+  /* margin-top: 32px; */
+  padding: 19px 0 0 30px;
+  /* border: 1px solid grey; */
+}
+.work-status .pb-1{
+  margin-top: 32px;
+}
+
+.work-status .pb-2{
+  margin-top: 41px;
+}
+
+.work-status  .progress-bar span{
+  display: inline-block;
+  font-family: 'Lato' , sans-serif;
+  font-weight: bold;
+} 
+.work-status .outer-bar{
+  width: 332px;
+  height: 9px;
+  border-radius: 5px;
+  background-color: #E1E2E6;
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.progress-bar .inner-bar-1{
+  /* width: 43%; */
+  height: 9px; 
+  border-radius: 5px;
+  background-color: #5FCCC1;
+  /* display: inline-block;   */
+  /* position: relative; */
+}
+
+/* .progress-bar .work-percentage{
+   height: 9px; 
+  border-radius: 5px;
+  background-color: #5FCCC1;
+  color: #ffffff;
+  display: inline-block;  */
+  /* position: relative;
+  left: -20px;
+  bottom: 20px;
+  padding: 3px 2px;  
+}*/
 
 /*---------------------------------------------------------------------------*/
 
