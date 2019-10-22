@@ -12,6 +12,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -24,7 +25,8 @@ body {
 /*----------------------------------------------------*/
 
 /*-----------------------Header Section-----------------*/
-header {
+
+ header {
   width: 1200px;
   height: 60px;
   position: fixed;
@@ -34,6 +36,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #384b59;
+  z-index: 2;
 }
 
 header #logo-container {
@@ -69,14 +72,6 @@ nav div:hover {
   background-color: #e9e9e91a;
 }
 
- #inbox {
-  position: absolute;
-} 
-
-/* #message{
-  position: relative;
-} */
-
 .circle {
   height: 19px;
   width: 19px;
@@ -89,7 +84,7 @@ nav div:hover {
   bottom: 20px;
   left: 20px;
   padding-top: 2px;
-}
+} 
 
 /*------------------------Header Section ends------------------------*/
 
@@ -115,8 +110,8 @@ nav div:hover {
 }
 
 #dashboard .boxes {
-  width: 100%;
-  height: 110px;
+  /* width: 100%;
+  height: 110px; */
   margin-top: 36px;
 }
 
@@ -166,17 +161,32 @@ nav div:hover {
   width: 90px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  position: relative;
+  /* position: relative; */
 }
 
-.box img {
+.box-1 .inner-box{
+  padding: 34px 33px;
+}
+
+.box-2 .inner-box{
+  padding: 32px 22px 31px 23px;
+}
+
+.box-3 .inner-box{
+  padding: 34px 28px 33px;
+}
+
+.box-4 .inner-box{
+  padding: 32px 26px 31px;
+}
+/* .box img {
   position: absolute;
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
+} */
 
 #dashboard .dash-mar {
   margin-left: 24px;
@@ -209,8 +219,8 @@ nav div:hover {
 }
 
 #milestones .mile-boxes-upper {
-  width: 100%;
-  height: 166px;
+  /* width: 100%;
+  height: 166px; */
   margin-top: 21px;
 }
 
@@ -221,9 +231,10 @@ nav div:hover {
   background-color: #ffffff;
 }
 
-#milestones .mile-mar {
+
+ #milestones .mile-mar {
   margin-left: 24px;
-}
+} 
 
 /* #milestones .box-4 {
   float: right;
@@ -298,22 +309,28 @@ nav div:hover {
   height: 59px;
   margin-top: 0.2mm;
   background-color: #ffffff;
+  text-align: center;
+  position: relative;
 }
 
 #milestones .mile-boxes-lower .lower-text {
-  float: left;
-  margin: 20px 0 20px 91px;
+  /* float: left; */
+  margin: 22px 0;
+  display: inline-block;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #363f45;
 }
 #milestones .mile-boxes-lower .lower-text-no {
-  float: right;
+  /* float: right; */
   font-size: 34px;
-  margin: 9px 22px 7px 0;
+  /* margin: 9px 22px 7px 0; */
   color: #e1e2e9;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
+  position: absolute;
+  top: 13px;
+  right: 22px;
 }
 /*---------------------Milestones Section Ends------------------------------*/
 
@@ -463,7 +480,8 @@ nav div:hover {
   height: 9px; 
   border-radius: 5px;
   background-color: #5FCCC1;
-   position: relative; 
+  position: relative; 
+  max-width: 100%;
 }
 
  .progress-bar .work-percentage{
@@ -473,14 +491,15 @@ nav div:hover {
   position: absolute;
   bottom: 15px;
   right: -12px;
-  padding: 3px 2px;
+  padding: 4px;
+  font-size: 12px;
 }
 
 .work-percentage .square{
   height: 5px;
   width: 5px;
-  margin-left: 13px;
-  margin-bottom: -5px;
+  margin-left: 10px;
+  margin-bottom: -6px;
   transform: rotate(45deg);
   background-color: #5FCCC1;
 }
@@ -491,15 +510,18 @@ nav div:hover {
 footer {
   margin-top: 111px;
   width: 100%;
-  height: 44px;
+  /* height: 44px; */
   padding: 15px 24px 16px 0;
   background-color: #384b59;
-}
-
-footer span {
-  float: right;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  text-align: right;
   color: #9caab4;
 }
+
+/* footer p {
+  float: right; 
+  font-size: 11px;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 400;
+  color: #9caab4;
+} */
