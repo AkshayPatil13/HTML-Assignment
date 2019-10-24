@@ -344,7 +344,7 @@ right: 3px;
 /*---------------------------Recent Tasks Section------------------------------*/
 #last {
   /* width: 1152px; */
-  height: 339px;
+  /* height: 339px; */
   margin: 69px 24px 0 24px;
 }
 
@@ -452,7 +452,7 @@ right: 3px;
 
 .work-status .pb-3{
   margin-top:41px;
-  margin-bottom:50px;
+  margin-bottom:44px;
 }
 
 .work-status .progress-bar span {
