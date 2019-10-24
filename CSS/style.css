@@ -18,6 +18,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-top: 62px;
   background-color: #ebecf2;
 }
 
@@ -26,8 +27,12 @@ body {
 /*-----------------------Header Section-----------------*/
 
 header{
-  background-color: #384B59;
+  position: fixed;
+  top: 0;
+  width: inherit;
   padding: 0 24px 0 24px;
+  z-index: 2;
+  background-color: #384B59;
 }
 
 header .logo{
@@ -35,9 +40,11 @@ header .logo{
   padding: 9px 0 9px 0;
 } 
 
-header .logo a:nth-child(2) img{
-    margin-bottom: 11px;
-    margin-left: 60px;
+header .menu{
+  margin-left: 60px;
+}
+header .menu img{
+    margin-bottom: 11px;  
 }
 
 header nav{
@@ -54,7 +61,7 @@ header nav ul li a{
   padding: 11px;
 }
 
-header nav ul li:nth-child(2) a{
+header nav .settings a{
   padding: 10px 11px 9px 11px;
 }
 header nav ul li a:hover{
@@ -65,7 +72,7 @@ header nav ul li img{
   vertical-align: middle;
 }
 
-header ul li:nth-child(1){
+header .inbox{
   position: relative;
 }
 
@@ -114,7 +121,6 @@ right: 3px;
 #dashboard .box {
   float: left;
   width: 23.43%;
-  /* height: 110px; */
 }
 
 #dashboard .box-1,
@@ -140,43 +146,40 @@ right: 3px;
 
 .box .left-b {
   float: left;
-  height: 100%;
-  margin-left: 15px;
-  padding-top: 11px;
+  margin: 11px 15px 8px;
 }
 
 .boxes .text-1 {
   color: #ffffff;
-  text-align: left;
+  line-height: 19px;
 }
 
 .boxes .text-2 {
   color: #ffffff;
   font-size: 30px;
   margin-top: 34px;
+  line-height: 38px;
 }
 
 #dashboard .inner-box {
   float: right;
-  width: 90px;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.box-1 .inner-box {
-  padding: 34px 33px;
+.box-1 .inner-box img{
+  margin: 34px;
 }
 
-.box-2 .inner-box {
-  padding: 32px 22px 31px 23px;
+.box-2 .inner-box img{
+  margin: 32px 22px 31px 23px;
 }
 
-.box-3 .inner-box {
-  padding: 34px 28px 33px;
+.box-3 .inner-box img{
+  margin: 34px 28px 33px;
 }
 
-.box-4 .inner-box {
-  padding: 32px 26px 31px;
+.box-4 .inner-box img{
+  margin: 32px 26px 31px;
 }
 
 /*-----------------------Dashboard Section Ends------------------------------*/
@@ -217,7 +220,7 @@ right: 3px;
   width: 23.43%;
   /* height: 166px; */
   background-color: #ffffff;
-  text-align: center;
+  /* text-align: center; */
 }
 #milestones .box-1,
 .box-2,
@@ -229,9 +232,7 @@ right: 3px;
   width: 111px;
   height: 111px;
   border-radius: 50%;
-  /* margin: 28px 79px 27px 80px; */
-  display: inline-block;
-  margin: 28px 0 27px 0;
+  margin: 0 auto;
   padding: 10px;
 }
 #milestones .inner-circle {
@@ -375,17 +376,19 @@ right: 3px;
 .recent-tasks ul li {
   padding: 18px 30px 17px;
 }
+
+.recent-tasks span{
+  vertical-align: sub;  
+}
 .recent-tasks .checkbox {
   height: 17px;
   width: 17px;
   border: 1px solid #ced4d9;
   display: inline-block;
-  margin-bottom: 1px;
 }
 
 .date {
   float: right;
-  margin-top: -4px;
 }
 
 .date p:nth-child(1) {
@@ -452,7 +455,7 @@ right: 3px;
 
 .work-status .pb-3{
   margin-top:41px;
-  margin-bottom:44px;
+  margin-bottom:89px;
 }
 
 .work-status .progress-bar span {
