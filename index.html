@@ -3,7 +3,6 @@
   <head>
     <title>SPIRE | WELCOME</title>
     <link rel="stylesheet" href="./CSS/reset.css" type="text/css" />
-    <link rel="stylesheet" href="./CSS/normalise.css" type="text/css" />
     <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Quicksand:500,700&display=swap"/>
   </head>
@@ -25,12 +24,12 @@
           </nav>
       </header>
 
-      <section id="dashboard">
+      <section class="dashboard">
         <h1>CITY MALL - PROJECT DASHBOARD</h1>
         <img class="three-dot" src="./images/Three-dot.png" />
         <div class="clearfix"></div>
         <div class="boxes">
-          <div class=" box box-1">
+          <div class=" dbox dbox-1">
             <div class="left-b">
               <p class="text-1">BUDGET</p>
               <p class="text-2">2.3 M</p>
@@ -40,7 +39,7 @@
             </div>
           </div>
 
-          <div class=" box box-2">
+          <div class=" dbox dbox-2">
             <div class="left-b">
               <p class="text-1">MILESTONE</p>
               <p class="text-2">24</p>
@@ -50,7 +49,7 @@
             </div>
           </div>
 
-          <div class=" box box-3">
+          <div class=" dbox dbox-3">
             <div class="left-b">
               <p class="text-1">TASKS</p>
               <p class="text-2">137</p>
@@ -60,7 +59,7 @@
             </div>
           </div>
 
-          <div class=" box box-4">
+          <div class=" dbox dbox-4">
             <div class="left-b">
               <p class="text-1">DOCUMENTS</p>
               <p class="text-2">241</p>
@@ -73,7 +72,7 @@
         </div>
       </section>
 
-      <section id="milestones">
+      <section class="milestones">
         <h1>MILESTONES</h1>
         <div class="mile-images">
           <img class="less-than" src="./images/less-than.png" />
@@ -82,7 +81,7 @@
         </div>
 
         <div class="mile-boxes-upper">
-          <div class=" box box-1">
+          <div class=" mbox mbox-1">
             <div class="outer-circle oc-1">
               <div class="inner-circle ic-1">
                 <p class="text-1">100</p>
@@ -91,7 +90,7 @@
             </div>
           </div>
 
-          <div class=" box box-2">
+          <div class=" mbox mbox-2">
             <div class="outer-circle oc-2">
               <div class="inner-circle ic-2">
                 <p class="text-1">64</p>
@@ -100,7 +99,7 @@
             </div>
           </div>
 
-          <div class=" box box-3">
+          <div class=" mbox mbox-3">
             <div class="outer-circle oc-3">
               <div class="inner-circle ic-3">
                 <p class="text-1">0</p>
@@ -109,7 +108,7 @@
             </div>
           </div>
 
-          <div class=" box box-4">
+          <div class=" mbox mbox-4">
             <div class="outer-circle oc-4">
               <div class="inner-circle ic-4">
                 <p class="text-1">0</p>
@@ -121,19 +120,19 @@
         </div>
 
         <div class="mile-boxes-lower">
-          <div class=" box box-1">
+          <div class="lower-box mbox-1">
             <p class="lower-text">MILESTONE</p>
             <p class="lower-text-no">1</p>
           </div>
-          <div class=" box box-2 mile-mar">
+          <div class="lower-box mbox-2">
             <p class="lower-text">MILESTONE</p>
             <p class="lower-text-no">2</p>
           </div>
-          <div class=" box box-3 mile-mar">
+          <div class="lower-box mbox-3">
             <p class="lower-text">MILESTONE</p>
             <p class="lower-text-no">3</p>
           </div>
-          <div class=" box box-4 mile-mar">
+          <div class="lower-box mbox-4">
             <p class="lower-text">MILESTONE</p>
             <p class="lower-text-no">4</p>
           </div>
@@ -145,7 +144,7 @@
         <div class="inner-bar"></div>
       </div>
 
-      <section id="last">
+      <section class="last">
         <div class="recent-tasks box-layout">
           <div class="left-box-heading">
             <h6>RECENT TASKS</h6>
@@ -155,7 +154,9 @@
 
           <ul>
             <li>
-              <span>Lorem ipsum dlores amet voluptates quidem</span>
+              <div class="task">
+                Lorem ipsum dlores amet voluptates quidem
+              </div>
               <div class="date">
                 <p>28<br />March 2018</p>
                 <p class="checkbox"></p>
@@ -164,7 +165,9 @@
             </li>
 
             <li>
-              <span>Voluptates iusto quidem harem rerum</span>
+              <div class="task">
+                Voluptates iusto quidem harem rerum
+              </div>
               <div class="date">
                 <p>2<br />Feb 2018</p>
                 <p><img src="./images/check.png" /></p>
@@ -173,7 +176,9 @@
             </li>
 
             <li>
-              <span>Nullam iusto ducimus 24/7</span>
+              <div class="task">
+                Nullam iusto ducimus 24/7
+              </div>
               <div class="date">
                 <p>12<br />Feb 2018</p>
                 <p class="checkbox"></p>
@@ -182,7 +187,9 @@
             </li>
 
             <li>
-              <span>Lorem ipsum dlores amet voluptates quidem</span>
+              <div class="task">
+                Lorem ipsum dlores amet voluptates quidem
+              </div>
               <div class="date">
                 <p>2<br />Jan 2018</p>
                 <p class="checkbox"></p>
@@ -191,7 +198,9 @@
             </li>
 
             <li>
-              <span>Lorem ipsum dlores amet voluptates quidem</span>
+              <div class="task">
+                Lorem ipsum dlores amet voluptates quidem
+              </div>
               <div class="date">
                 <p>27<br />Dec 2017</p>
                 <p class="checkbox"></p>
