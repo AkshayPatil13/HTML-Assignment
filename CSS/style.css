@@ -35,16 +35,19 @@ header{
   background-color: #384B59;
 }
 
+header a{
+  display: inline-block;
+}
 header .logo{
-  display: inline-block; 
-  padding: 9px 0 9px 0;
+  margin: 9px 60px 9px 0;
 } 
 
-header .menu{
-  margin-left: 60px;
+ .logo img , .menu img{
+  display: block;
 }
-header .menu img{
-    margin-bottom: 11px;  
+header .menu{
+  vertical-align: top;
+  margin-top: 24px;
 }
 
 header nav{
@@ -56,14 +59,20 @@ header nav ul li{
   float: left;
 }
 
-header nav ul li a{
-  display: inline-block;
-  padding: 11px;
+header .inbox a {
+  padding: 11px 10px 9px;
+  margin-right: 11px;
 }
 
-header nav .settings a{
-  padding: 10px 11px 9px 11px;
+header .settings a {
+  padding: 10px 10px 6px;
+  margin-right: 11px;
 }
+
+header .search a {
+  padding: 11px 12px 8px 11px;
+}
+
 header nav ul li a:hover{
   background-color: #E9E9E91A;
 }
@@ -81,10 +90,9 @@ font-size: 14px;
 text-align: center;
 line-height: 19px;
 color: #ffffff;
-/* padding-top: 3px; */
 position: absolute;
 top: 0px;
-right: 3px;
+right: 11px;
 }
 
 /*------------------------Header Section ends------------------------*/
@@ -106,7 +114,7 @@ right: 3px;
 
 .dashboard .three-dot {
   float: right;
-  padding: 5px 12px 0 0;
+  margin: 5px 12px 0 0;
 }
 
 .dashboard .boxes {
