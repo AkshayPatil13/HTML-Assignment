@@ -59,7 +59,19 @@ header nav ul li{
   float: left;
 }
 
-header .inbox a {
+header nav a{
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+header nav a img{
+  vertical-align: middle;
+}
+
+.inbox a , .settings a{
+  margin-right: 11px;
+}
+/* header .inbox a {
   padding: 11px 10px 9px;
   margin-right: 11px;
 }
@@ -71,7 +83,7 @@ header .settings a {
 
 header .search a {
   padding: 11px 12px 8px 11px;
-}
+} */
 
 header nav ul li a:hover{
   background-color: #E9E9E91A;
